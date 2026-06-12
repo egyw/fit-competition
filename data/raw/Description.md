@@ -103,10 +103,7 @@ Semua fitur:
 ## Struktur File
 
 ```
-Track 1/
-└── Flood Prediction/
-    └── Flood Prediction/
-        └── flood.csv
+flood.csv
 ```
 
 ---
