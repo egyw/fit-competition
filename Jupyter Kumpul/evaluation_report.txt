@@ -1,6 +1,6 @@
 ==============================================================
   DATA SCIENCE COMPETITION — EVALUATION REPORT
-  Generated : 2026-06-12 19:26:24
+  Generated : 2026-06-12 21:45:05
 ==============================================================
 
   ENVIRONMENT
@@ -32,7 +32,7 @@
          SVR   0.5518  0.0087     0.0335    0.0004    0.0260   0.0004     5.3954    0.0801
     LightGBM   0.9763  0.0009     0.0077    0.0001    0.0059   0.0001     1.1882    0.0128
 RandomForest   0.7157  0.0028     0.0267    0.0003    0.0210   0.0003     4.2476    0.0496
-    Ensemble   0.8218  0.0028     0.0211    0.0003    0.0164   0.0002     3.3613    0.0451
+    Ensemble   0.9818  0.0008     0.0067    0.0001    0.0053   0.0001     1.0676    0.0125
 
 ==============================================================
   TRAIN / TEST EVALUATION
@@ -53,12 +53,12 @@ RandomForest   0.7157  0.0028     0.0267    0.0003    0.0210   0.0003     4.2476
     Gap R²=0.2464
 
   [Ensemble]
-    Train  R²=0.916492  RMSE=0.014468  MAE=0.011210  MAPE=2.3136%
-    Test   R²=0.825437  RMSE=0.020851  MAE=0.016195  MAPE=3.3157%
-    Gap R²=0.0911
+    Train  R²=0.986426  RMSE=0.005833  MAE=0.004674  MAPE=0.9482%
+    Test   R²=0.982568  RMSE=0.006589  MAE=0.005128  MAPE=1.0313%
+    Gap R²=0.0039
 
 ==============================================================
-  BEST MODEL (Test R²): LightGBM  R²=0.9772
+  BEST MODEL (Test R²): Ensemble  R²=0.9826
 ==============================================================
 
 ==============================================================
@@ -79,31 +79,10 @@ RandomForest   0.7157  0.0028     0.0267    0.0003    0.0210   0.0003     4.2476
     IneffectiveDisasterPreparedness          0.005558
 
   [Ensemble]
-    Watersheds                               0.006220
-    PopulationScore                          0.006074
-    PoliticalFactors                         0.006017
-    Siltation                                0.005922
-    RiverManagement                          0.005899
+    CoastalVulnerability                     0.009724
+    Watersheds                               0.009508
+    Encroachments                            0.009493
+    InadequatePlanning                       0.009310
+    PopulationScore                          0.009254
 
-==============================================================
-  OUTPUT FILES
-==============================================================
-  figures/01_missing_duplicate.png
-  figures/02_histograms.png
-  figures/03_correlation_heatmap.png
-  figures/04_boxplots.png
-  figures/05_actual_vs_predicted.png
-  figures/06_residual_plots.png
-  figures/07_learning_curves.png
-  figures/08_shap_ens_bar.png
-  figures/08_shap_ens_summary.png
-  figures/08_shap_lgb_bar.png
-  figures/08_shap_lgb_summary.png
-  figures/08_shap_rf_bar.png
-  figures/08_shap_rf_summary.png
-  models/ensemble_model.pkl
-  models/lightgbm_model.pkl
-  models/randomforest_model.pkl
-  models/svr_model.pkl
-  reports/evaluation_report.txt
 ==============================================================
