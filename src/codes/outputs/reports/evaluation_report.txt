@@ -1,0 +1,23 @@
+==========================================================
+      FLOOD PREDICTION — XGBoost EVALUATION REPORT
+==========================================================
+
+[Train Set]
+  R²   : 0.992094
+  MAE  : 0.003550
+  RMSE : 0.004452
+  MAPE : 0.7168 %
+
+[Test Set]
+  R²   : 0.975589
+  MAE  : 0.006090
+  RMSE : 0.007797
+  MAPE : 1.2216 %
+
+Gap R² (Train − Test) : 0.0165
+Verdict               : Tidak ada overfitting signifikan.
+
+Catatan:
+  • Scaling tidak digunakan (XGBoost tree-based).
+  • Outlier tidak dihapus (tree ensemble robust).
+  • random_state=42 di seluruh pipeline.
