@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')
 # ==================================================
 # Menggunakan os.path.dirname(__file__) agar path selalu benar dari mana pun script dijalankan
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATASET_PATH = os.path.join(SCRIPT_DIR, "../../data/raw/Track 1/Flood Prediction/Flood Prediction/flood.csv")
+DATASET_PATH = os.path.join(SCRIPT_DIR, "../../data/raw/flood.csv")
 DATASET_PATH = os.path.normpath(DATASET_PATH)
 
 # Path untuk menyimpan output gambar
@@ -172,7 +172,7 @@ if numeric_cols:
     # 3. Correlation Heatmap
     plt.figure(figsize=(16, 12))
     corr_matrix = df[num_cols_to_plot].corr()
-    sns.heatmap(corr_matrix, annot=False, cmap='coolwarm', vmin=-1, vmax=1, center=0, linewidths=0.5)
+    sns.heatmap(corr_matrix, annot=True, fmt=".2f", annot_kws={"size": 8}, cmap='coolwarm', vmin=-1, vmax=1, center=0, linewidths=0.5)
     plt.title("Multivariate Analysis: Correlation Heatmap", fontsize=16)
     plt.tight_layout()
     plt.savefig(os.path.join(OUTPUT_DIR, "3_correlation_heatmap.png"), dpi=300)
