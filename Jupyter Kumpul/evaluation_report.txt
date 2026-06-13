@@ -1,6 +1,6 @@
 ==============================================================
   DATA SCIENCE COMPETITION — EVALUATION REPORT
-  Generated : 2026-06-12 21:45:05
+  Generated : 2026-06-13 16:41:21
 ==============================================================
 
   ENVIRONMENT
@@ -78,11 +78,18 @@ RandomForest   0.7157  0.0028     0.0267    0.0003    0.0210   0.0003     4.2476
     DamsQuality                              0.005615
     IneffectiveDisasterPreparedness          0.005558
 
+  [SVR]
+    PoliticalFactors                         0.003712
+    Encroachments                            0.003614
+    InadequatePlanning                       0.003423
+    DeterioratingInfrastructure              0.003326
+    RiverManagement                          0.003068
+
   [Ensemble]
-    CoastalVulnerability                     0.009724
-    Watersheds                               0.009508
-    Encroachments                            0.009493
-    InadequatePlanning                       0.009310
-    PopulationScore                          0.009254
+    CoastalVulnerability                     0.009701
+    Watersheds                               0.009517
+    Encroachments                            0.009483
+    InadequatePlanning                       0.009320
+    PopulationScore                          0.009259
 
 ==============================================================
